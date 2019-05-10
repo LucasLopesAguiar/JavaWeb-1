@@ -1,0 +1,8 @@
+#Thu May 09 22:01:41 BRT 2019
+expression=Theme
+org.eclipse.help.ui.localSearch.master=true
+org.hibernate.eclipse.help.HibernateWiki.master=true
+org.eclipse.sdk.Google.master=true
+org.jboss.tools.developer.search.master=true
+org.eclipse.sdk.Eclipse.master=true
+__DEFAULT__=false

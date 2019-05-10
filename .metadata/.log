@@ -1122,3 +1122,6 @@ org.eclipse.swt.SWTException: Widget is disposed
 !MESSAGE Help document /org.eclipse.datatools.doc.isv/html/reference/api/org/eclipse/datatools/sqltools/schemaobjecteditor/ui/util/package-summary.html cannot be opened.
 !SUBENTRY 1 org.eclipse.help.base 4 4 2019-05-09 21:35:38.458
 !MESSAGE Help document /org.eclipse.datatools.doc.isv/html/reference/api/org/eclipse/datatools/sqltools/result/internal/ui/export/component/package-summary.html cannot be opened.
+
+!ENTRY org.eclipse.jface.text 2 0 2019-05-09 21:54:33.378
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
