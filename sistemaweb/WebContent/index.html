@@ -17,46 +17,109 @@
 	height: 200px;
 	background: #aaa;
 }
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body{
+  font-family: "Quicksand", sans-serif;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: #grey;
+  background: #466368;
+  background: -webkit-linear-gradient(#648880, #293f50);
+  background:    -moz-linear-gradient(#648880, #293f50);
+  background:         linear-gradient(#648880, #293f50);
+  */
+}
+
+#wrapper {
+  width: 50%;
+  height: 100%;
+  bottom: 0;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  min-width: 400px;
+  overflow: hidden;
+}
+
+#loginWindow {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 2em;
+  border: solid #eee 1px;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+
+.input-group {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  opacity: 0;
+}
+
+.page-header {
+  opacity: 0;
+}
+
+.left {
+  float: right;
+  font-size: 1.5em;
+}
+
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+}
 </style>
 </head>
 <body>
 
-	<div class="jumbotron text-center" style="margin-bottom: 0">
-		<h1>Sistema Web</h1>
-		<p>Texto Aqui</p>
-	</div>
+	<div id="wrapper">
+  <div id="loginWindow">
+    <div class="page-header">
+      <h1 align="center">Login</h1>
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon" id="inputUser">User:</span>
+      <input type="text" class="form-control" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon" id="inputPass">Pass:</span>
+      <input type="password" class="form-control" aria-describedby="basic-addon2">
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </div>
+</div>
 
-	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-		<a class="navbar-brand" href="index.html">Home</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse"
-			data-target="#collapsibleNavbar">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="dropdown">
-			<button class="btn btn-secondary dropdown-toggle" type="button"
-				id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-				aria-expanded="false">Cadastro</button>
-			<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-				<button class="dropdown-item" type="button">
-					<a href="cadastro.html">Produto</a>
-				</button>
-				<button class="dropdown-item" type="button">
-					<a href="pessoa.html">Pessoa</a>
-				</button>
-				<button class="dropdown-item" type="button">
-					<a href="orcamento.html">Orçamento</a>
-				</button>
-			</div>
-		</div>
-		<a class="navbar-brand" href="produtos.html">&nbspProdutos</a>
-		
-	</nav>
-	<br>
 
 
 	<div class="jumbotron text-center" style="margin-bottom: 0">
 		<p>Footer</p>
 	</div>
-
+	
+<script>
+$( document ).ready( function(){
+	  $( '#loginWindow' ).animate({ 'width': '100%' }, 500)
+	    .delay(30)
+	    .animate({ 'height': '300px' }, 500);
+	  $( '.page-header, .input-group, .btn' )
+	    .delay(850)
+	    .animate({ 'opacity': '100' }, 7000);
+	});</script>
 </body>
 </html>
