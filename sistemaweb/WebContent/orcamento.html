@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Sistema Web</title>
+<title>Orçamento</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
@@ -22,8 +22,8 @@
 <body>
 
 	<div class="jumbotron text-center" style="margin-bottom: 0">
-		<h1>Sistema Web</h1>
-		<p>Texto Aqui</p>
+		<h1>Orçamento</h1>
+		<p>Criação de orçamento</p>
 	</div>
 
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -44,14 +44,68 @@
 					<a href="pessoa.html">Pessoa</a>
 				</button>
 				<button class="dropdown-item" type="button">
-					<a href="orcamento.html">Orçamento</a>
+					<a href="formbase.html">alguma coisa</a>
 				</button>
 			</div>
 		</div>
-		<a class="navbar-brand" href="produtos.html">&nbspProdutos</a>
-		
 	</nav>
 	<br>
+
+	<div class="container">
+		<form>
+			<div class="form-inline">
+
+				<div class="form-group mx-sm-3">
+					<label for="inputDesc">Código: </label> <input type="text"
+						disabled="disabled" class="form-control" id="codOrçamento">
+				</div>
+
+				<div class="form-group">
+					<label for="inputCPF">CPF/CNPJ cliente:</label> <input type="text"
+						class="form-control" id="inputCPF" placeholder="">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="buscaProduto">Produto:</label> <input type="text"
+					class="form-control" id="buscaProduto" placeholder="">
+			</div>
+
+
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">Código</th>
+					<th scope="col">Cliente</th>
+					<th scope="col"></th>
+					<th scope="col"></th>
+					<th scope="col"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>Mark</td>
+					<td><a>Detalhes</a></td>
+					<td>Editar</td>
+					<td>Excluir</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Jacob</td>
+					<td><a>Detalhes</a></td>
+					<td>Editar</td>
+					<td>Excluir</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+
+
 
 
 	<div class="jumbotron text-center" style="margin-bottom: 0">
